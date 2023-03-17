@@ -19,6 +19,8 @@ public class Filme {
 
     private String nome;
 
+    private String genero;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "diretor_id")
     private Diretor diretor;
