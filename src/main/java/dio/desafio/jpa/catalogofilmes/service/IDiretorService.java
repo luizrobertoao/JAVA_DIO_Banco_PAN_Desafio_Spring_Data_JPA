@@ -9,7 +9,7 @@ public interface IDiretorService {
 
     Diretor create(DiretorForm form);
 
-    Diretor get();
+    Diretor get(Long id);
 
     List<Diretor> getAll();
 

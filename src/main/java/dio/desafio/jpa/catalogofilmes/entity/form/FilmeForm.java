@@ -18,6 +18,10 @@ public class FilmeForm {
     @Size(min = 1, max = 50, message = "'${validatedValue}' precisa ter entre {min} e {max} caracteres.")
     private String nome;
 
+    @NotEmpty(message = "O campo genero não pode ser nulo.")
+    @Size(min = 3, max = 50, message = "'${validatedValue}' precisa ter entre {min} e {max} caracteres.")
+    private String genero;
+
     @NotNull(message = "Este campo não pode ser nulo.")
     @Positive(message = "O Id do aluno não pode ser negativo.")
     private Long diretorId;
