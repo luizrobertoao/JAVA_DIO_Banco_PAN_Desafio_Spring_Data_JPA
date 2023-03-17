@@ -21,11 +21,11 @@ public class Filme {
 
     private String genero;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.DETACH)
     @JoinColumn(name = "diretor_id")
     private Diretor diretor;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.DETACH)
     @JoinColumn(name = "produtora_id")
     private Produtora produtora;
 }
