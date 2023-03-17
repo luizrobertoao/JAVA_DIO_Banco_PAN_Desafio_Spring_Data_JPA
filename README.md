@@ -35,4 +35,4 @@ Para executar a aplicação é necessario os seguintes passos:\
 `https://github.com/luizrobertoao/JAVA_DIO_Banco_PAN_Desafio_Spring_Data_JPA` \
 3- Crie um banco de dados PostgreSQL chamado catalogo_filmes.\
 4- Rode a aplicação.\
-5- Utilize link https://www.postman.com/luizrobertoao/workspace/catalogo-de-filmes/collection/ do Postman para visualizar e enviar requests via endpoints da API.
+5- Importe o arquivo **"endpoints.postman_collection.json"** (na raiz do projeto) para o Postman para visualizar e enviar requests via endpoints da API.
