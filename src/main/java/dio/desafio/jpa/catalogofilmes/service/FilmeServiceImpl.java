@@ -62,4 +62,8 @@ public class FilmeServiceImpl implements IFIlmeService{
     public void delete(Long id) {
         filmeRepository.deleteById(id);
     }
+
+    public List<Filme> findByDirector(String nomeDiretor) {
+        return filmeRepository.findByDiretorNome(nomeDiretor);
+    }
 }

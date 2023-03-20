@@ -9,4 +9,6 @@ import java.util.List;
 @Repository
 public interface FilmeRepository extends JpaRepository<Filme, Long> {
     List<Filme> findByGenero(String genero);
+
+    List<Filme> findByDiretorNome(String nomeDiretor);
 }

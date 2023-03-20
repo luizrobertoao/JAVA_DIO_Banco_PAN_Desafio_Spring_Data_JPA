@@ -38,6 +38,11 @@ public class FilmeController {
         return service.getAll(genero);
     }
 
+    @GetMapping("/filter-by-diretor")
+    public List<Filme> findByDiretor(@RequestParam(name = "diretor") String nomeDiretor){
+        return  service.findByDirector(nomeDiretor);
+    };
+
     @DeleteMapping
     public void deleteById(@RequestParam(value = "id") Long id) {
         service.delete(id);
