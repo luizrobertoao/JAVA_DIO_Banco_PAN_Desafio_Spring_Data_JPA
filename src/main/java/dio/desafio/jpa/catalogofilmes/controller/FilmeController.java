@@ -34,8 +34,8 @@ public class FilmeController {
     }
 
     @GetMapping
-    public List<Filme> getAll() {
-        return service.getAll();
+    public List<Filme> getAll(@RequestParam(name = "genero", required = false) String genero) {
+        return service.getAll(genero);
     }
 
     @DeleteMapping

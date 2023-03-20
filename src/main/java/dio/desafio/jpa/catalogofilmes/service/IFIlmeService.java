@@ -11,7 +11,7 @@ public interface IFIlmeService {
 
     Filme get(Long id);
 
-    List<Filme> getAll();
+    List<Filme> getAll(String genero);
 
     Filme update(Long id, FilmeForm form);
 

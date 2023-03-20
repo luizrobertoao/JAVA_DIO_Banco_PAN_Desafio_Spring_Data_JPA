@@ -39,8 +39,12 @@ public class FilmeServiceImpl implements IFIlmeService{
     }
 
     @Override
-    public List<Filme> getAll() {
-        return filmeRepository.findAll();
+    public List<Filme> getAll(String genero) {
+        if (genero == null) {
+            return filmeRepository.findAll();
+        } else {
+            return filmeRepository.findByGenero(genero);
+        }
     }
 
     @Override
