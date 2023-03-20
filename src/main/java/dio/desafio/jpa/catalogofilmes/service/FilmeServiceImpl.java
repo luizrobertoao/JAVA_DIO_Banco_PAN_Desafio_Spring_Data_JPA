@@ -43,7 +43,8 @@ public class FilmeServiceImpl implements IFIlmeService{
         if (genero == null) {
             return filmeRepository.findAll();
         } else {
-            return filmeRepository.findByGenero(genero);
+//            return filmeRepository.findByGeneroContaining(genero);
+            return filmeRepository.filterByGenero(genero);
         }
     }
 
@@ -64,6 +65,6 @@ public class FilmeServiceImpl implements IFIlmeService{
     }
 
     public List<Filme> findByDirector(String nomeDiretor) {
-        return filmeRepository.findByDiretorNome(nomeDiretor);
+        return filmeRepository.filterByNomeDiretor(nomeDiretor);
     }
 }
